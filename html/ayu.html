@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Halo indri</title>
+  <link rel="stylesheet" type="text/css" href="dims.css">
+  <script src="wokeh.js"></script>
+<script>
+    if ("Notification" in window) {
+            // Minta izin notifikasi dari pengguna
+            Notification.requestPermission().then(function(permission) {
+                if (permission === "granted") {
+                    // Jika izin diberikan, tampilkan notifikasi
+                    var notification = new Notification("halo indri", {
+                        body: "aku usahin yang terbaik buat kamu hehe"
+                    });
+                }
+            });
+        }
+  alert("halo indri")
+  alert("biar gak bte")
+  alert("aku kasih lagu ya")
+</script>
+</head>
+<body>
+
+    <style>
+        body {
+          background-image: url('https://i.postimg.cc/50m9Dt2P/apaan.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+          backdrop-filter: blur(8px);
+        }
+      </style>
+  <div class="countdown-container">
+    <h1>Countdown My Brithday</h1>
+    <div id="countdown"></div>
+      <img src="https://i.postimg.cc/Vk8pTW2F/indri2.jpg"/>
+  
+    <p id="message"></p>
+    <h2>Sabar Ya cantik
+  </div>
+  <audio src="https://mcdn.podbean.com/mf/web/3aith3/y2mate_mp3cutnet_6h8m1.mp3" autoplay loop></audio>
+<footer>by arya</footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@media screen and (max-widh: 767px) {
+  .countdown-container {
+    flex-direction: column;
+  }
+  .container div {
+    font-size: 2rem;
+  }
+}
+h2 {
+  color: #f2f2f2;
+  text-align: 500px center;
+  font-size: 24;
+}
+h1 {
+  font-size: 20;
+  color: #f2f2f2;
+  text-align: 500px center;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.countdown-container {
+  text-align: center;
+  margin-top: 10%;
+}
+#countdown {
+  font-size: 24px;
+  color: #18a6c2;
+  top: 10%;
+  bottom: 31px;
+}
+#message {
+  font-size: 30px;
+  color: #ff0000;
+  display: none;
+}
+img {
+  max-width: 50%;
+  height: 50%;
+}
+/* Gaya umum */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+@media (min-width: 319px) and (max-width: 480px) {
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="weh.css" />
+  </head>
+  <body>
+    <audio
+      id="background-audio"
+      src="https://mcdn.podbean.com/mf/web/bbwaxv/y2matecom_-_keshi_LIMBO_Lyrics_mp3cutnet_5yfv8.mp3"
+      autoplay
+      loop
+    ></audio>
+
+    <div class="scroll-container">
+      <div class="scroll-section">
+        <img
+          src="https://media.tenor.com/3HXj24goQicAAAAj/tkthao219-quby.gif"/>
+        <p class="animated-paragraph">Hai indri dwi prastiwi</p>
+        </p>
+      </div>
+      <div class="scroll-section">
+        <img
+          src="https://media.tenor.com/DUCwmYGyFygAAAAC/peachandgoma-peach.gif"/>
+        <p class="animated-paragraph" style="animation-duration: 4.5s">
+          Cie yang Nambah Tua nih  &#128540;
+        </p>
+        
+      </div>
+      <div class="scroll-section">
+        <img src="https://media.tenor.com/Beyd-TNKqVMAAAAj/bubududu-panda.gif"/>
+        <p class="animated-paragraph" style="animation-duration: 2s">
+          Gak banyak ucapan di tahun ini 
+        </p> <p class="animated-paragraph" style="animation-duration: 2s">
+          Semoga di tahun ini  
+        </p>
+      </p> <p class="animated-paragraph" style="animation-duration: 2s">
+        yang kamu mau tercapai  
+      </p>
+      </div>
+      <div class="scroll-section">
+        <img src="https://i.postimg.cc/XvmV310b/indri1.jpg" alt="Image 4" />
+        Section 4
+      </div>
+      <div class="scroll-section">
+        <img
+          src="https://i.pinimg.com/originals/fa/8a/ed/fa8aed040112fa7ae04b00655b895102.gif"
+          alt="Image 5"
+        />
+        halo indrii gimana kabar nya
+        <p>j</p>
+      </div>
+      <div class="scroll-section">
+        <img
+          src="https://media.tenor.com/5mY0_OI1MSUAAAAi/peach-cat.gif"
+          alt="Image 5"
+        />
+        Pencet lagi yaa indrii
+        <p>Ada kejutan buat kamu hehe</p>
+      </div>
+     
+      <div class="end-section">
+        <img
+          class="end-image"
+          src="https://media.tenor.com/MTQr74ANvmAAAAAj/tkthao219-peach.gif"
+          alt="End Image"
+        />
+      </div>
+    </div>
+
+    <div class="scroll-controls">
+      <button onclick="scrollToNextSection()" class="neon-text">Geser</button>
+    </div>
+
+    <script>
+      function scrollToNextSection() {
+        var scrollContainer = document.querySelector(".scroll-container");
+        var scrollSections = document.querySelectorAll(".scroll-section");
+        var currentIndex = Math.floor(
+          scrollContainer.scrollLeft / scrollContainer.offsetWidth
+        );
+        var nextIndex = currentIndex + 1;
+        if (nextIndex < scrollSections.length) {
+          scrollContainer.scrollTo({
+            left: scrollSections[nextIndex].offsetLeft,
+            behavior: "smooth",
+          });
+        } else {
+          // Pindah ke halaman lain
+          window.location.href = "haloo.html";
+        }
+      }
+    </script>
+  </body>
+</html>
